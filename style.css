@@ -318,3 +318,26 @@ footer a:hover {
   color: white;            /* Hover केल्यावर white */
 }
 
+
+/* Footer */
+footer {
+  background: #111;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 2px solid red;
+}
+
+footer a:link,
+footer a:visited {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+footer a:hover,
+footer a:active {
+  color: white;
+}
