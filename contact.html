@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | NextGenAdi4U</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      👥 Active Users: <span id="activeCount">0</span>
+    </div>
+    <div class="header-center">
+      <h1 class="logo">NextGenAdi4U</h1>
+    </div>
+    <div class="header-right">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="editing-pack.html">Editing Packs</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <h2 style="text-align:center;">Contact Me</h2>
+    <div class="bundle-container">
+      <div class="bundle-item">
+        <h3>Get in Touch</h3>
+        <p>📧 Email: <a href="mailto:adityasarkar96k@gmail.com">adityasarkar96k@gmail.com</a></p>
+        <p>📺 YouTube: <a href="https://www.youtube.com/@YourChannel" target="_blank">NextGenAdi4U</a></p>
+        <p>📸 Instagram: <a href="https://www.instagram.com/YourInsta" target="_blank">@YourInsta</a></p>
+        <p>📢 Telegram: <a href="https://t.me/+SQxLnfSsx69mM2I1" target="_blank">Join Channel</a></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 NextGenAdi4U | All Rights Reserved</p>
+    <p>
+      <a href="https://www.youtube.com/@YourChannel" target="_blank">📺 YouTube</a> |
+      <a href="https://www.instagram.com/YourInsta" target="_blank">📸 Instagram</a> |
+      <a href="https://t.me/+SQxLnfSsx69mM2I1" target="_blank">📢 Telegram</a> |
+      <a href="mailto:adityasarkar96k@gmail.com">📧 Contact</a>
+    </p>
+  </footer>
+
+  <!-- Active user script -->
+  <script>
+    function updateActiveUsers() {
+      let randomUsers = Math.floor(Math.random() * 200) + 19;
+      document.getElementById("activeCount").innerText = randomUsers;
+    }
+    setInterval(updateActiveUsers, 3000);
+    updateActiveUsers();
+  </script>
+</body>
+</html>
