@@ -257,3 +257,36 @@ main {
   background: darkred;
 }
 
+/* Footer */
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 8px;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* Active Users (top-left corner) */
+.active-users {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: #fff;
+  font-weight: bold;
+  background: rgba(255, 0, 0, 0.7);
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
