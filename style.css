@@ -32,3 +32,54 @@ nav a {
   border-radius: 10px;
   background: #111;
 }
+.bundle-showcase {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.bundle-item {
+  background: #111;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.bundle-item img {
+  width: 180px;
+  border-radius: 8px;
+}
+
+.download-btn {
+  background: red;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px yellow;
+}
+
+.download-btn:hover {
+  background: yellow;
+  color: black;
+}
+
+.feedback {
+  padding: 20px;
+  background: #111;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.review {
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 4px solid red;
+  text-align: left;
+}
+
