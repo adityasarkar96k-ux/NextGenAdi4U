@@ -50,9 +50,22 @@
       <a href="adityasarkar96k@gmail.com">📧 Contact</a>
     </p>
   </div>
+    <script>
+  // Random active users counter (demo purpose)
+  function updateActiveUsers() {
+    let randomUsers = Math.floor(Math.random() * 50) + 10; // 10 ते 60 users
+    document.getElementById("activeCount").innerText = randomUsers;
+  }
+
+  // Update दर 5 सेकंदानी
+  updateActiveUsers();
+  setInterval(updateActiveUsers, 5000);
+</script>
+
   </footer>
 </body>
 </html>
+
 
 
 
