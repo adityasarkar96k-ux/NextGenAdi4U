@@ -106,49 +106,80 @@ nav a {
   cursor: pointer;
 }
 
-.bundle-item {
-  background: #111;
-  border: 2px solid #e50914;
-  border-radius: 12px;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body Theme */
+body {
+  background-color: #111; /* Black background */
+  color: #fff; /* White text */
+  line-height: 1.6;
   padding: 20px;
-  margin: 20px auto;
-  max-width: 700px;
+}
+
+/* Header */
+header h1 {
   text-align: center;
-  color: #fff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  color: #ff0000; /* Red title */
+  margin-bottom: 20px;
+}
+
+/* Bundle Showcase */
+.bundle-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Bundle Card */
+.bundle-item {
+  background: #1a1a1a;
+  border: 2px solid #ff0000;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bundle-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff0000;
 }
 
 .bundle-item img {
-  max-width: 220px;
+  max-width: 100%;
+  border-radius: 5px;
   margin-bottom: 10px;
-  border-radius: 8px;
 }
 
 .bundle-item h3 {
-  margin: 10px 0;
-  font-size: 22px;
-  color: #e50914;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
 .bundle-item p {
-  font-size: 16px;
-  margin: 8px 0 15px;
-  color: #ddd;
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 15px;
 }
 
+/* Download Button */
 .download-btn {
   display: inline-block;
-  padding: 10px 18px;
-  background: #e50914;
+  padding: 10px 15px;
+  background: #ff0000;
   color: #fff;
-  border-radius: 6px;
   text-decoration: none;
+  border-radius: 5px;
   font-weight: bold;
-  transition: background 0.2s;
+  transition: background 0.3s ease;
 }
 
 .download-btn:hover {
-  background: #fff;
-  color: #000;
+  background: #cc0000;
 }
-
