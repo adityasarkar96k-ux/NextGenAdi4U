@@ -341,3 +341,49 @@ footer a:hover,
 footer a:active {
   color: white;
 }
+
+/* Header */
+header {
+  background: #111; /* Dark background */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  position: relative;
+  border-bottom: 2px solid red; /* red accent line */
+}
+
+/* Header Title */
+header h1 {
+  margin: 0;
+  font-size: 22px;
+  color: red; /* brand highlight */
+  letter-spacing: 1px;
+}
+
+/* Navigation */
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: red; /* Hover red */
+}
+
+/* Active Users (top-left corner) */
+.active-users {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: white;
+  font-weight: bold;
+  background: rgba(255, 0, 0, 0.7);
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+}
