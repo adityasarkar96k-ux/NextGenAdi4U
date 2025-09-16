@@ -333,6 +333,32 @@ footer a:active {
   color: white;
 }
 
+/* ===== ABOUT PAGE ===== */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh; /* vertical center */
+}
+
+.about-card {
+  background: #111;  /* dark theme */
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.about-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #ff4c4c;
+}
+
 
 
 
