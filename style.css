@@ -7,27 +7,42 @@ body {
   text-align: center;
 }
 
-/* Header */
+/* Header container */
 header {
-  background: #111; /* Dark background */
+  background: #111;
   color: white;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* Left - Center - Right */
   align-items: center;
-  justify-content: space-between;
   padding: 15px 30px;
+  border-bottom: 2px solid red;
   position: relative;
-  border-bottom: 2px solid red; /* red accent line */
 }
 
-/* Header Title */
-header h1 {
+/* Active users - Left */
+.active-users {
+  justify-self: start;
+  font-size: 14px;
+  font-weight: bold;
+  background: rgba(255, 0, 0, 0.7);
+  padding: 5px 12px;
+  border-radius: 10px;
+}
+
+/* Website name - Center */
+.site-title {
+  justify-self: center;
   margin: 0;
-  font-size: 22px;
-  color: red; /* brand highlight */
+  font-size: 24px;
+  color: red;
   letter-spacing: 1px;
 }
 
-/* Navigation */
+/* Navigation - Right */
+header nav {
+  justify-self: end;
+}
+
 header nav a {
   color: white;
   text-decoration: none;
@@ -37,20 +52,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: red; /* Hover red */
-}
-
-/* Active Users (top-left corner) */
-.active-users {
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  color: white;
-  font-weight: bold;
-  background: rgba(255, 0, 0, 0.7);
-  padding: 5px 12px;
-  border-radius: 10px;
-  font-size: 14px;
+  color: red;
 }
 
 .download-btn:hover {
@@ -330,6 +332,7 @@ footer a:hover,
 footer a:active {
   color: white;
 }
+
 
 
 
