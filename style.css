@@ -290,3 +290,31 @@ footer a:hover {
   font-size: 14px;
 }
 
+/* Footer */
+footer {
+  background: #111;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 2px solid red;
+}
+
+footer p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* Footer Links */
+footer a {
+  color: red;              /* Default red */
+  text-decoration: none;   /* underline काढली */
+  font-weight: bold;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: white;            /* Hover केल्यावर white */
+}
+
