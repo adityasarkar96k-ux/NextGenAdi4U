@@ -153,6 +153,24 @@
 
 </main>
 
+<script>
+  // Search filter function
+  document.getElementById("searchInput").addEventListener("keyup", function() {
+    let filter = this.value.toLowerCase();
+    let bundles = document.getElementsByClassName("bundle-item");
+
+    for (let i = 0; i < bundles.length; i++) {
+      let title = bundles[i].getElementsByTagName("h3")[0].innerText.toLowerCase();
+      if (title.includes(filter)) {
+        bundles[i].style.display = "";
+      } else {
+        bundles[i].style.display = "none";
+      }
+    }
+  });
+</script>
+
+
 
 
 
