@@ -2,6 +2,12 @@
   <h2 style="text-align:center;">All Softwares</h2>
   <link rel="stylesheet" href="style.css">
 
+  <!-- 🔍 Search box -->
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="🔍 Search here...">
+</div>
+
+
 <div class="bundle-container">
   <!-- 1. Adobe After Effect -->
   <div class="bundle-item">
@@ -9,4 +15,22 @@
     <h3>Adobe After Effect</h3>
     <p>Ae</p>
     <a href="https://drive.google.com/YOUR-LINK-HERE" target="_blank" class="download-btn">⬇ Download Now</a>
+
   </div>
+
+  <script>
+  // Search filter function
+  document.getElementById("searchInput").addEventListener("keyup", function() {
+    let filter = this.value.toLowerCase();
+    let bundles = document.getElementsByClassName("bundle-item");
+
+    for (let i = 0; i < bundles.length; i++) {
+      let title = bundles[i].getElementsByTagName("h3")[0].innerText.toLowerCase();
+      if (title.includes(filter)) {
+        bundles[i].style.display = "";
+      } else {
+        bundles[i].style.display = "none";
+      }
+    }
+  });
+</script>
