@@ -1,6 +1,11 @@
 <main>
   <h2 style="text-align:center;">PC Games</h2>
   <link rel="stylesheet" href="style.css">
+  <!-- 🔍 Search box -->
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="🔍 Search here...">
+</div>
+
 
 <div class="bundle-container">
   <!-- 1. Motel Managar Simulator -->
@@ -14,4 +19,21 @@
 
 
 </main>
+
+<script>
+  // Search filter function
+  document.getElementById("searchInput").addEventListener("keyup", function() {
+    let filter = this.value.toLowerCase();
+    let bundles = document.getElementsByClassName("bundle-item");
+
+    for (let i = 0; i < bundles.length; i++) {
+      let title = bundles[i].getElementsByTagName("h3")[0].innerText.toLowerCase();
+      if (title.includes(filter)) {
+        bundles[i].style.display = "";
+      } else {
+        bundles[i].style.display = "none";
+      }
+    }
+  });
+</script>
 
