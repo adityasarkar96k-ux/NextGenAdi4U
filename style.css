@@ -426,6 +426,19 @@ nav ul li a {
   }
 }
 
+.search-bar {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
 
 
 
