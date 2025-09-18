@@ -540,3 +540,20 @@ header h1.logo {
 .header-right nav a.active {
   color: #ff0000;
 }
+
+/* Header line fix */
+header {
+  border: none;              /* remove old borders */
+  border-bottom: 2px solid #ff0000; /* neat red line only bottom */
+  box-shadow: 0 2px 6px rgba(255, 0, 0, 0.4); /* soft red shadow */
+}
+
+/* Logo color white */
+header h1.logo {
+  color: #ffffff !important; /* white text */
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
