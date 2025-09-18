@@ -1,11 +1,26 @@
-<main>
-  <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <header>
+    <h1>Your Shopping Cart</h1>
+  </header>
 
-  <h2>Your Cart</h2>
-  <div id="cart-items"></div>
-  <p>Total Items: <span id="total-items">0</span></p>
-  <p>Total Price: ₹<span id="total-price">0</span></p>
-  <button onclick="buyNow()">Buy Now</button>
-</main>
+  <main>
+    <div id="cart-items"></div>
 
-<script src="script.js"></script>
+    <div class="cart-summary">
+      <p>Total Items: <span id="total-items">0</span></p>
+      <p>Total Price: ₹<span id="total-price">0</span></p>
+      <button id="checkout-btn">Buy Now</button>
+    </div>
+  </main>
+
+  <script src="cart.js"></script>
+</body>
+</html>
