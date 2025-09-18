@@ -8,50 +8,7 @@ body {
   text-align: center;
 }
 
-/* ===== Header ===== */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background: #111;
-  color: white;
-  border-bottom: 2px solid red;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
 
-.site-title {
-  margin: 0;
-  font-size: 24px;
-  color: red;
-  letter-spacing: 1px;
-}
-
-.active-users {
-  font-size: 14px;
-  font-weight: bold;
-  background: rgba(255, 0, 0, 0.7);
-  padding: 5px 12px;
-  border-radius: 10px;
-}
-
-header nav {
-  display: flex;
-  gap: 20px;
-}
-
-header nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-header nav a:hover {
-  color: red;
-}
 
 /* ===== Search Bar ===== */
 .search-bar {
@@ -556,6 +513,7 @@ header h1.logo {
   margin: 0;
   letter-spacing: 2px;
 }
+
 
 
 
