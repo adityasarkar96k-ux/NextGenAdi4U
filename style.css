@@ -495,3 +495,48 @@ header h1.logo {
 .header-right nav a:hover {
   color: #ff0000;
 }
+
+/* Header layout fix */
+header {
+  display: flex;
+  justify-content: space-between; /* left & right normal */
+  align-items: center;
+  padding: 15px 20px;
+  background: #000; /* black theme */
+  position: relative;
+}
+
+/* Logo center absolute */
+header h1.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  color: #ff0000;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+/* Left side - Active Users */
+.header-left {
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+/* Right side - Nav links */
+.header-right nav {
+  display: flex;
+  gap: 15px;
+}
+.header-right nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.header-right nav a:hover,
+.header-right nav a.active {
+  color: #ff0000;
+}
