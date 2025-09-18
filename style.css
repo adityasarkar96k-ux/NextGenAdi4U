@@ -419,3 +419,21 @@ footer a:hover {
   transform: translateY(-5px);
   box-shadow: 0px 6px 20px rgba(229, 9, 20, 0.5);
 }
+
+/* Header center fix */
+header {
+  display: flex;
+  justify-content: center; /* horizontally center */
+  align-items: center;     /* vertically center */
+  padding: 20px;
+  background: #000; /* black theme */
+}
+
+header h1 {
+  margin: 0;
+  color: #ff0000; /* red theme */
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+}
