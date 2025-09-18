@@ -1,16 +1,178 @@
-<main>
-  <h2 style="text-align:center;">Paid</h2>
-  <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paid Packages - NextGenAdi4u</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      background: #111;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      color: red;
+      margin: 0;
+    }
+    .search-bar {
+      flex: 1;
+      margin: 0 20px;
+    }
+    .search-bar input {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background: #111;
+      border: 1px solid red;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .product:hover {
+      transform: scale(1.03);
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .product h2 {
+      color: red;
+      margin: 10px 0;
+    }
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .btn {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .add-cart {
+      background: red;
+      color: white;
+    }
+    .buy-now {
+      background: white;
+      color: red;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      text-align: center;
+      background: #111;
+      border-top: 1px solid red;
+    }
+  </style>
+</head>
+<body>
 
-<div class="bundle-container">
-  <!-- 1. 2D Animation Stories Hindi -->
-  <div class="bundle-item">
-    <img src="thumbnail-bundle.png" alt="2D Animation Stories Hindi">
-    <h3>2D Animation Stories Hindi</h3>
-    <p>Disclaimer:- Must Watch How To Watch! ThankYou!!</p>
-    <a href="https://drive.google.com/YOUR-LINK-HERE" target="_blank" class="download-btn">⬇ Download Now</a>
+  <!-- Header -->
+  <header>
+    <h1>NextGenAdi4u</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Search packages...">
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="reviews.html">Reviews</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2 style="color:red; text-align:center;">🔥 Paid Packages 🔥</h2>
+    <div class="product-grid">
+
+      <!-- Product 1 -->
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200/ff0000/000000?text=Package+1" alt="Package 1">
+        <h2>Basic Package</h2>
+        <p>Perfect for beginners. Includes editing presets, effects & intro pack.</p>
+        <p class="price">₹199</p>
+        <button class="btn add-cart">Add to Cart</button>
+        <a href="https://rzp.io/l/demo-buy" target="_blank"><button class="btn buy-now">Buy Now</button></a>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200/ff0000/000000?text=Package+2" alt="Package 2">
+        <h2>Pro Package</h2>
+        <p>For serious creators. Includes reels bundle, advanced transitions & color LUTs.</p>
+        <p class="price">₹499</p>
+        <button class="btn add-cart">Add to Cart</button>
+        <a href="https://rzp.io/l/demo-buy" target="_blank"><button class="btn buy-now">Buy Now</button></a>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200/ff0000/000000?text=Package+3" alt="Package 3">
+        <h2>Ultimate Package</h2>
+        <p>Full bundle: editing software, reels kit, templates, and premium assets.</p>
+        <p class="price">₹999</p>
+        <button class="btn add-cart">Add to Cart</button>
+        <a href="https://rzp.io/l/demo-buy" target="_blank"><button class="btn buy-now">Buy Now</button></a>
+      </div>
+
+    </div>
   </div>
 
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 NextGenAdi4u. All Rights Reserved.</p>
+  </footer>
 
-
-</main>
+  <!-- Script (for Add to Cart Demo) -->
+  <script>
+    let cart = [];
+    document.querySelectorAll('.add-cart').forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        cart.push("Package " + (index+1));
+        alert("Added to cart: Package " + (index+1));
+        console.log(cart);
+      });
+    });
+  </script>
+</body>
+</html>
