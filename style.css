@@ -557,25 +557,5 @@ header h1.logo {
   letter-spacing: 2px;
 }
 
-/* Header underline fix */
-header {
-  position: relative;
-  border-bottom: 2px solid red; /* neat red line */
-  padding: 15px 30px;
-  background: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-/* Logo white with neon glow */
-header h1.logo {
-  color: #ffffff !important; /* white */
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0;
-  letter-spacing: 2px;
-  text-align: center;
-  text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
-}
 
