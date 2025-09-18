@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | NextGenAdi4U</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      👥 Active Users: <span id="activeCount">0</span>
+    </div>
+    
+      <h1 class="logo">NextGenAdi4U</h1>
+    </div>
+    <div class="header-right">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="editing-pack.html">Editing Packs</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+  <h2 style="text-align:center;">Our Services</h2>
+  <div class="about-container">
+    <div class="about-card">
+      <img src="profile.png" alt="NextGenServices">
+      <h3>Who Am I?</h3>
+      <p>
+        Hi 👋 I’m <b>Aditya Sarkar</b>, creator of <b>NextGenAdi4U</b>.  
+        This platform is made for creators to get editing packs, reels bundles, PNGs, and much more.  
+        My mission is to make All resources accessible to everyone ✨.
+        And About Our Services Scroll Down and Explore What you Want 
+        ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+      </p>
+    </div>
+  </div>
+</main>
+
+  <a href="Tech-pack.html" class="item"> Tech </a>
+  <a href="Marketing-pack.html" class="item"> Marketing </a>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 NextGenAdi4U | All Rights Reserved</p>
+    <p>
+    <a href="https://www.youtube.com/channel/UCMU5aIURKAtlQIHoqo0nYQQ" target="_blank">📺 YouTube</a> |
+    <a href="https://www.instagram.com/_rise.everyday?igsh=bGN5N3pkbWdkZjhl&utm_source=qr" target="_blank">📸 Instagram</a> |
+    <a href="https://t.me/+SQxLnfSsx69mM2I1" target="_blank">📢 Telegram</a> |
+    <a href="mailto:nextgen.adi4u@gmail.com">📧 Contact</a>
+    </p>
+  </footer>
+
+  <!-- Active user script -->
+  <script>
+    function updateActiveUsers() {
+      let randomUsers = Math.floor(Math.random() * 200) + 19;
+      document.getElementById("activeCount").innerText = randomUsers;
+    }
+    setInterval(updateActiveUsers, 3000);
+    updateActiveUsers();
+  </script>
+</body>
+</html>
+
+
+
+
