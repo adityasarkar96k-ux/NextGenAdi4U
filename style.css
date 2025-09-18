@@ -277,48 +277,48 @@ footer a:hover {
 }
 
 
-/* ===== Categories Section ===== */
+/* ===== Categories Section Premium Red-Black ===== */
 .categories {
   text-align: center;
   padding: 50px 20px;
+  background: #000; /* Pure Black Background */
 }
 
 .categories h2 {
-  font-size: 28px;
+  font-size: 32px;
   margin-bottom: 40px;
   color: #ff3333; /* Premium Red */
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-/* Single Row = One Card Below Another */
+/* 1 below 1 big cards */
 .category-grid {
   display: flex;
-  flex-direction: column;
-  gap: 25px;
+  flex-direction: column; /* Each card ek under ek */
+  gap: 30px;
   max-width: 900px;
   margin: 0 auto;
 }
 
-/* Big Banner Style Category Card */
+/* Big Premium Category Card */
 .category-card {
   display: block;
-  background: #111; /* Dark Black */
-  border: 2px solid #e50914; /* Netflix Red */
+  background: linear-gradient(135deg, #111, #1a1a1a);
+  border: 2px solid #ff1a1a;
   border-radius: 15px;
-  padding: 40px;
+  padding: 30px;
   text-decoration: none;
   color: white;
   font-size: 22px;
-  font-weight: 600;
-  transition: all 0.3s ease-in-out;
-  text-align: center;
-  box-shadow: 0 0 15px rgba(229, 9, 20, 0.4);
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
 }
 
 .category-card:hover {
-  background: #e50914; /* Red Fill */
-  color: #fff;
+  background: #ff1a1a;
+  color: #000;
   transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 0 25px rgba(229, 9, 20, 0.8);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
 }
