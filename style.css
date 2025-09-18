@@ -276,3 +276,42 @@ footer a:hover {
   }
 }
 
+
+/* Categories Section */
+.categories {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 28px;
+  color: #d4af37; /* golden */
+  margin-bottom: 30px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  display: block;
+  padding: 25px;
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 1px solid #d4af37;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  background: #d4af37;
+  color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(212,175,55,0.8);
+}
