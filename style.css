@@ -437,3 +437,20 @@ header h1 {
   letter-spacing: 2px;
   text-align: center;
 }
+
+/* Back button design */
+.back-btn {
+  background: #ff0000; /* Red background */
+  color: #fff;        /* White text */
+  border: none;
+  padding: 8px 16px;
+  margin-right: 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #cc0000; /* Darker red on hover */
+}
