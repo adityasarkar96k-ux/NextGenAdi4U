@@ -56,3 +56,41 @@ function buyNow() {
     window.location.href = "index.html";
   }
 }
+// Get cart data from localStorage
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+const cartItemsContainer = document.getElementById("cart-items");
+const totalItems = document.getElementById("total-items");
+const totalPrice = document.getElementById("total-price");
+
+// Function to render cart items
+function renderCart() {
+  cartItemsContainer.innerHTML = "";
+  let total = 0;
+
+  cart.forEach((item, index) => {
+    total += item.price * item.quantity;
+
+    const div = document.createElement("div");
+    div.classList.add("cart-item");
+    div.innerHTML = `
+      <span>${item.name} (x${item.quantity})</span>
+      <span>₹${item.price * item.quantity}</span>
+      <button onclick="removeFromCart(${index})">Remove</button>
+    `;
+    cartItemsContainer.appendChild(div);
+  });
+
+  totalItems.textContent = cart.length;
+  totalPrice.textContent = total;
+}
+
+// Remove item function
+function removeFromCart(index) {
+  cart.splice(index, 1);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  renderCart();
+}
+
+// Run renderCart when page loads
+renderCart();
