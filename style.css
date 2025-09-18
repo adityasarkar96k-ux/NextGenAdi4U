@@ -1,27 +1,35 @@
+/* ===== Global ===== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: black;
-  color: white;
+  background: #000;
+  color: #fff;
   text-align: center;
 }
 
-/* Header container */
+/* ===== Header ===== */
 header {
-  background: #111;
-  color: white;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr; /* Left - Center - Right */
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
+  background: #111;
+  color: white;
   border-bottom: 2px solid red;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-/* Active users - Left */
+.site-title {
+  margin: 0;
+  font-size: 24px;
+  color: red;
+  letter-spacing: 1px;
+}
+
 .active-users {
-  justify-self: start;
   font-size: 14px;
   font-weight: bold;
   background: rgba(255, 0, 0, 0.7);
@@ -29,24 +37,14 @@ header {
   border-radius: 10px;
 }
 
-/* Website name - Center */
-.site-title {
-  justify-self: center;
-  margin: 0;
-  font-size: 24px;
-  color: red;
-  letter-spacing: 1px;
-}
-
-/* Navigation - Right */
 header nav {
-  justify-self: end;
+  display: flex;
+  gap: 20px;
 }
 
 header nav a {
   color: white;
   text-decoration: none;
-  margin: 0 12px;
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -55,78 +53,128 @@ header nav a:hover {
   color: red;
 }
 
-.download-btn:hover {
-  background: yellow;
+/* ===== Search Bar ===== */
+.search-bar {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.search-bar input {
+  width: 60%;
+  max-width: 450px;
+  padding: 12px 15px;
+  font-size: 16px;
+  color: #fff;
+  background: #111;
+  border: 2px solid #e50914;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.3);
+}
+
+.search-bar input:focus {
+  border-color: #fff;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+/* ===== Product Grid ===== */
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background: #111;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.product:hover {
+  transform: scale(1.03);
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product h2 {
+  color: red;
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.add-cart {
+  background: red;
+  color: white;
+}
+
+.add-cart:hover {
+  background: darkred;
+}
+
+.buy-now {
+  background: white;
+  color: red;
+}
+
+.buy-now:hover {
+  background: #ff3333;
   color: black;
 }
 
-.feedback {
+/* ===== Bundle Section ===== */
+.bundle-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   padding: 20px;
-  background: #111;
-  margin: 20px;
-  border-radius: 10px;
-}
-
-.review {
-  margin: 10px 0;
-  padding: 10px;
-  border-left: 4px solid red;
-  text-align: left;
-}
-
-/* Make .item links look like buttons */
-.item {
-  display: block;
-  max-width: 900px;
-  margin: 12px auto;
-  padding: 16px 20px;
-  background: #111;
-  color: #fff;
-  text-decoration: none;
-  border: 2px solid #e50914;
-  border-radius: 10px;
-  font-size: 18px;
-  text-align: center;
-  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
-}
-
-.item:hover {
-  background: #e50914;
-  color: #000;
-  transform: translateY(-3px);
-  cursor: pointer;
-}
-
-/* --------------------------
-   Bundle Page Styling
--------------------------- */
-main {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #000; /* काळा background */
-  color: #fff;
 }
 
 .bundle-item {
   background: #111;
   border: 2px solid red;
   border-radius: 10px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 600px;
-  box-shadow: 0px 4px 10px rgba(255,0,0,0.4);
-  transition: transform 0.2s ease;
-}
-
-.bundle-item:hover {
-  transform: scale(1.03);
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0px 4px 10px rgba(255,0,0,0.3);
 }
 
 .bundle-item img {
   max-width: 100%;
-  height: auto;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
   border-radius: 8px;
-  margin-bottom: 15px;
 }
 
 .bundle-item h3 {
@@ -137,45 +185,6 @@ main {
 .bundle-item p {
   font-size: 14px;
   color: #ddd;
-  margin-bottom: 15px;
-}
-
-.download-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: red;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-}
-
-.download-btn:hover {
-
-  /* Container for bundles */
-.bundle-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 bundles per row */
-  gap: 20px; /* space between bundles */
-  padding: 20px;
-}
-
-/* Each bundle card */
-.bundle-item {
-  background: #111;
-  border: 2px solid red;
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-  color: white;
-  transition: 0.3s;
-}
-
-.bundle-item img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
 }
 
 .bundle-item:hover {
@@ -183,7 +192,6 @@ main {
   box-shadow: 0 0 15px red;
 }
 
-/* Download button */
 .download-btn {
   display: inline-block;
   margin-top: 10px;
@@ -200,149 +208,16 @@ main {
   background: darkred;
 }
 
-  background: #ff3333;
-}
-
-/* Bundle Container - grid layout */
-.bundle-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 1 row = 4 bundles */
-  gap: 20px; /* space between bundles */
-  margin: 20px;
-}
-
-/* Bundle Item design */
-.bundle-item {
-  background: #111;
-  border: 1px solid #333;
-  border-radius: 12px;
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.2s ease-in-out;
-}
-
-.bundle-item:hover {
-  transform: scale(1.05);
-}
-
-.bundle-item img {
-  max-width: 100%;
-  height: 150px;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-
-/* Download button */
-.download-btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
-  background: red;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-.download-btn:hover {
-  background: darkred;
-}
-
-/* Footer */
-footer {
-  background: #111;
-  color: #aaa;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
-
-footer a {
-  color: red;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 8px;
-}
-
-footer a:hover {
-  color: #fff;
-}
-
-/* Active Users (top-left corner) */
-.active-users {
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  color: #fff;
-  font-weight: bold;
-  background: rgba(255, 0, 0, 0.7);
-  padding: 5px 12px;
-  border-radius: 10px;
-  font-size: 14px;
-}
-
-/* Footer */
-footer {
-  background: #111;
-  color: #ddd;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  border-top: 2px solid red;
-}
-
-footer p {
-  margin: 8px 0;
-  font-size: 14px;
-}
-
-/* Footer Links */
-footer a {
-  color: red;              /* Default red */
-  text-decoration: none;   /* underline काढली */
-  font-weight: bold;
-  margin: 0 10px;
-  transition: color 0.3s;
-}
-
-footer a:hover {
-  color: white;            /* Hover केल्यावर white */
-}
-
-
-/* Footer */
-footer {
-  background: #111;
-  color: #ddd;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  border-top: 2px solid red;
-}
-
-footer a:link,
-footer a:visited {
-  color: red;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 10px;
-}
-
-footer a:hover,
-footer a:active {
-  color: white;
-}
-
-/* ===== ABOUT PAGE ===== */
+/* ===== About Page ===== */
 .about-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70vh; /* vertical center */
+  min-height: 70vh;
 }
 
 .about-card {
-  background: #111;  /* dark theme */
+  background: #111;
   color: white;
   padding: 30px;
   border-radius: 12px;
@@ -359,198 +234,44 @@ footer a:active {
   border: 3px solid #ff4c4c;
 }
 
-/* ✅ Mobile Responsive Header */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-    padding: 15px;
-  }
-
-  header h1 {
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .active-users {
-    margin-top: 10px;
-    font-size: 14px;
-  }
-}
-
-/* Default desktop header (flex row) */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
+/* ===== Footer ===== */
+footer {
   background: #111;
-  color: white;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 2px solid red;
 }
 
-/* Navigation links row */
-nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
-
-nav ul li a {
-  color: white;
+footer a {
+  color: red;
   text-decoration: none;
   font-weight: bold;
+  margin: 0 10px;
+  transition: color 0.3s;
 }
 
-/* ✅ Responsive design for mobile */
+footer a:hover {
+  color: white;
+}
+
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
     text-align: center;
   }
 
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
+  header nav {
     margin-top: 10px;
   }
 
-  .active-users {
-    margin-top: 8px;
-    font-size: 14px;
+  .search-bar input {
+    width: 90%;
+  }
+
+  .bundle-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
 }
-
-.search-bar {
-  text-align: center;
-  margin: 25px 0;
-}
-
-.search-bar input {
-  width: 60%;
-  max-width: 450px;
-  padding: 12px 15px;
-  font-size: 16px;
-  color: #fff;
-  background: #111; /* dark background */
-  border: 2px solid #e50914; /* red accent */
-  border-radius: 25px; /* modern rounded */
-  outline: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(229, 9, 20, 0.3);
-}
-
-.search-bar input:focus {
-  border-color: #fff;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
-}
-
-
-<style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
-    header {
-      background: #111;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    header h1 {
-      color: red;
-      margin: 0;
-    }
-    .search-bar {
-      flex: 1;
-      margin: 0 20px;
-    }
-    .search-bar input {
-      width: 100%;
-      padding: 8px 12px;
-      border-radius: 5px;
-      border: none;
-      outline: none;
-    }
-    .nav-links {
-      display: flex;
-      gap: 20px;
-    }
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 30px auto;
-      padding: 20px;
-    }
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .product {
-      background: #111;
-      border: 1px solid red;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-      transition: transform 0.2s;
-    }
-    .product:hover {
-      transform: scale(1.03);
-    }
-    .product img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
-    .product h2 {
-      color: red;
-      margin: 10px 0;
-    }
-    .price {
-      font-size: 20px;
-      font-weight: bold;
-      margin: 10px 0;
-    }
-    .btn {
-      display: inline-block;
-      margin: 5px;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    .add-cart {
-      background: red;
-      color: white;
-    }
-    .buy-now {
-      background: white;
-      color: red;
-    }
-    footer {
-      margin-top: 40px;
-      padding: 15px;
-      text-align: center;
-      background: #111;
-      border-top: 1px solid red;
-    }
-  </style>
-</head>
-<body>
