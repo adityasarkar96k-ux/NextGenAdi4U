@@ -94,3 +94,18 @@ function removeFromCart(index) {
 
 // Run renderCart when page loads
 renderCart();
+
+function searchPacks() {
+  let input = document.getElementById("searchBox").value.toLowerCase();
+  let products = document.querySelectorAll("#products .product");
+
+  products.forEach(product => {
+    let name = product.querySelector("h2").textContent.toLowerCase();
+    if (name.includes(input)) {
+      product.style.display = "block";
+    } else {
+      product.style.display = "none";
+    }
+  });
+}
+
