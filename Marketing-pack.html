@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketing Services | NextGenAdi4U</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      👥 Active Users: <span id="activeCount">0</span>
+    </div>
+    <h1 class="logo">NextGenAdi4U</h1>
+    <div class="header-right">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="editing-pack.html">Editing Packs</a>
+        <a href="our pack.html">Our Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <h2 style="text-align:center;">Marketing Services</h2>
+    <div class="about-container">
+      <div class="about-card">
+        <img src="marketing.png" alt="Marketing Services">
+        <h3>What We Offer in Marketing 📈</h3>
+        <ul class="service-list">
+          <li>💹 Forex Market Training <span style="float:right; color:#0f0;">₹1999</span></li>
+          <li>📊 Indian Stock Market Training <span style="float:right; color:#0f0;">₹999</span></li>
+          <li>🌐 Digital Marketing Mastery</li>
+          <li>🔍 SEO (Search Engine Optimization)</li>
+          <li>📱 Social Media Marketing (FB, Insta, YT Ads)</li>
+          <li>📢 Google Ads & PPC Campaigns</li>
+          <li>📝 Copywriting & Content Strategy</li>
+          <li>📧 Email Marketing & Automation</li>
+          <li>📊 Analytics & Performance Tracking</li>
+          <li>🛒 E-commerce Growth Strategies</li>
+        </ul>
+        <p style="margin-top:20px; font-weight:bold; text-align:center;">
+          👉 Want to Learn Marketing & Trading?  
+          <br>📱 Contact on WhatsApp: 7385585398 / 8087807974  
+          <br>📢 Don’t Forget to Join Our Telegram!  
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 NextGenAdi4U | All Rights Reserved</p>
+    <p>
+      <a href="https://www.youtube.com/channel/UCMU5aIURKAtlQIHoqo0nYQQ" target="_blank">📺 YouTube</a> |
+      <a href="https://www.instagram.com/_rise.everyday?igsh=bGN5N3pkbWdkZjhl&utm_source=qr" target="_blank">📸 Instagram</a> |
+      <a href="https://t.me/+SQxLnfSsx69mM2I1" target="_blank">📢 Telegram</a> |
+      <a href="mailto:nextgen.adi4u@gmail.com">📧 Contact</a>
+    </p>
+  </footer>
+
+  <!-- Active user script -->
+  <script>
+    function updateActiveUsers() {
+      let randomUsers = Math.floor(Math.random() * 200) + 19;
+      document.getElementById("activeCount").innerText = randomUsers;
+    }
+    setInterval(updateActiveUsers, 3000);
+    updateActiveUsers();
+  </script>
+</body>
+</html>
