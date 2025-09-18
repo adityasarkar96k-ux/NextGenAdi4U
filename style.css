@@ -285,7 +285,7 @@ footer a:hover {
 
 .categories h2 {
   font-size: 28px;
-  color: #d4af37; /* golden */
+  color: #fff
   margin-bottom: 30px;
 }
 
@@ -311,7 +311,8 @@ footer a:hover {
 
 .category-card:hover {
   background: #d4af37;
-  color: #000;
+  color: #fff
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(212,175,55,0.8);
 }
+
