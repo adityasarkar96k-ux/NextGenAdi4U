@@ -277,8 +277,7 @@ footer a:hover {
 }
 
 
-/* Categories Premium Look */
-/* Categories Section */
+/* ===== Categories Section ===== */
 .categories {
   text-align: center;
   padding: 50px 20px;
@@ -287,25 +286,25 @@ footer a:hover {
 .categories h2 {
   font-size: 28px;
   margin-bottom: 40px;
-  color: gold;
+  color: #ff3333; /* Premium Red */
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-/* Category Full-Width Layout */
+/* Single Row = One Card Below Another */
 .category-grid {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
   max-width: 900px;
   margin: 0 auto;
 }
 
-/* Big Banner Category Cards */
+/* Big Banner Style Category Card */
 .category-card {
   display: block;
-  background: #1a1a1a;
-  border: 2px solid gold;
+  background: #111; /* Dark Black */
+  border: 2px solid #e50914; /* Netflix Red */
   border-radius: 15px;
   padding: 40px;
   text-decoration: none;
@@ -314,12 +313,12 @@ footer a:hover {
   font-weight: 600;
   transition: all 0.3s ease-in-out;
   text-align: center;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.25);
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.4);
 }
 
 .category-card:hover {
-  background: gold;
-  color: black;
-  transform: scale(1.03);
-  box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
+  background: #e50914; /* Red Fill */
+  color: #fff;
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 0 25px rgba(229, 9, 20, 0.8);
 }
