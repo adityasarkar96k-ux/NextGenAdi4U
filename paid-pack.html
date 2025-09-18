@@ -70,19 +70,35 @@
     <p>© 2025 NextGenAdi4u. All Rights Reserved.</p>
   </footer>
 
-  <!-- Script (for Add to Cart Demo) -->
   <script>
-    let cart = [];
-    document.querySelectorAll('.add-cart').forEach((btn, index) => {
-      btn.addEventListener('click', () => {
-        cart.push("Package " + (index+1));
-        alert("Added to cart: Package " + (index+1));
-        console.log(cart);
-      });
-    });
-  </script>
-</body>
-</html>
+function addToCart(name, price) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // Check if item already in cart
+  let existing = cart.find(item => item.name === name);
+  if (existing) {
+    existing.quantity++;
+  } else {
+    cart.push({ name: name, price: price, quantity: 1 });
+  }
+
+  // Save
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  // Update cart count instantly
+  updateCartCount();
+}
+
+// Show cart count in header
+function updateCartCount() {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  document.getElementById("cart-count").textContent = cart.length;
+}
+
+// Run on page load
+updateCartCount();
+</script>
+
 
 
 
