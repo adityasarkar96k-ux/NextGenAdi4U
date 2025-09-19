@@ -6,7 +6,7 @@ body {
   padding: 0;
   
   /* Background GIF */
-  background: url("Paper 1.gif") no-repeat center center fixed;
+  background: url("No Copyright Video, Background, Red Screen, Motion Graphics, Animated Background - Yusuf Design World (1080p, h264).gif") no-repeat center center fixed;
   background-size: cover;
 
   color: #fff;
@@ -481,5 +481,6 @@ footer a:hover {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
 }
+
 
 
