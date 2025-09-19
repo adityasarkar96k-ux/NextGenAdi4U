@@ -3,129 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <title>NextGenAdi4U</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- ===== HEADER ===== -->
   <header>
-  <div class="header-left">
-    👥 Active Users: <span id="activeCount">0</span>
-  </div>
-
-  <div class="header-center">
-  <img src="images/logo.gif" alt="NextGenAdi4U Logo" class="logo">
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
-  
-</header>
-
-  <script src="script.js"></script>
-
-<section class="categories">
-  <h2>Explore Categories</h2>
-  <div class="category-grid">
-    <a href="editing-pack.html" class="category-card">🎬 Editing Pack</a>
-    <a href="reels-pack.html" class="category-card">📱 Reels Bundle</a>
-    <a href="animation-pack.html" class="category-card">✨ 2D Animation Bundle</a>
-    <a href="music-pack.html" class="category-card">🎵 Background Music</a>
-    <a href="luts-presets.html" class="category-card">🎨 LUTs & Presets</a>
-    <a href="courses-pack.html" class="category-card">🚀 Courses Pack</a>
-    <a href="paid-pack.html" class="category-card">💸 Paid Pack</a>
-    <a href="our-pack.html" class="category-card">🗿 Our Services</a>
-    <a href="games-pack.html" class="category-card">📺 PC Games</a>
-    <a href="game-pack.html" class="category-card">📱 Mobile Mod Apk's & Games</a>
-    <a href="software-pack.html" class="category-card">💻 All Softwares</a>
-    <a href="steam-account.html" class="category-card">🔥 Steam Accounts</a>
-  </div>
-</section>
-
-<!-- ===== YouTube Uploaded Packs Section ===== -->
-<section class="yt-packs">
-  <h2>YouTube Uploaded Packs</h2>
-  <div class="yt-pack-grid">
-    
-    <!-- Pack 1 -->
-    <div class="yt-pack-card">
-      <img src="mappack.jpg" alt="Pack 1">
-      <h3>Map Animation Pack</h3>
-      <p>Exclusive effects, transitions for pro editing.</p>
-      <a href="https://sub4unlock.com/SL/1659362" 
-     class="download-btn" target="_blank">Download</a>
+    <div class="header-left">
+      👥 Active Users: <span id="activeCount">0</span>
     </div>
 
-  
+    <div class="header-center">
+      <img src="images/logo.gif" alt="NextGenAdi4U Logo" class="logo">
+    </div>
 
-  </div>
-</section>
+    <nav class="header-right">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
+  <!-- ===== CATEGORIES ===== -->
+  <section class="categories">
+    <h2>Explore Categories</h2>
+    <div class="category-grid">
+      <a href="editing-pack.html" class="category-card">🎬 Editing Pack</a>
+      <a href="reels-pack.html" class="category-card">📱 Reels Bundle</a>
+      <a href="animation-pack.html" class="category-card">✨ 2D Animation Bundle</a>
+      <a href="music-pack.html" class="category-card">🎵 Background Music</a>
+      <a href="luts-presets.html" class="category-card">🎨 LUTs & Presets</a>
+      <a href="courses-pack.html" class="category-card">🚀 Courses Pack</a>
+      <a href="paid-pack.html" class="category-card">💸 Paid Pack</a>
+      <a href="our-pack.html" class="category-card">🗿 Our Services</a>
+      <a href="games-pack.html" class="category-card">📺 PC Games</a>
+      <a href="game-pack.html" class="category-card">📱 Mobile Mod Apk's & Games</a>
+      <a href="software-pack.html" class="category-card">💻 All Softwares</a>
+      <a href="steam-account.html" class="category-card">🔥 Steam Accounts</a>
+    </div>
+  </section>
 
+  <!-- ===== YOUTUBE PACKS ===== -->
+  <section class="yt-packs">
+    <h2>YouTube Uploaded Packs</h2>
+    <div class="yt-pack-grid">
+      <!-- Pack 1 -->
+      <div class="yt-pack-card">
+        <img src="mappack.jpg" alt="Pack 1">
+        <h3>Map Animation Pack</h3>
+        <p>Exclusive effects, transitions for pro editing.</p>
+        <a href="https://sub4unlock.com/SL/1659362" 
+           class="download-btn" target="_blank">Download</a>
+      </div>
+    </div>
+  </section>
 
-
+  <!-- ===== FOOTER ===== -->
   <footer>
-  <p>© 2025 NextGenAdi4U | All Rights Reserved</p>
-  <p>
-    <a href="https://www.youtube.com/channel/UCMU5aIURKAtlQIHoqo0nYQQ" target="_blank">📺 YouTube</a> |
-    <a href="https://www.instagram.com/_rise.everyday?igsh=bGN5N3pkbWdkZjhl&utm_source=qr" target="_blank">📸 Instagram</a> |
-    <a href="https://t.me/+SQxLnfSsx69mM2I1" target="_blank">📢 Telegram</a> |
-    <a href="mailto:nextgen.adi4u@gmail.com">📧 Contact</a>
-  </p>
-</footer>
-
-<script>
-  // Random active users counter (demo purpose)
-  function updateActiveUsers() {
-    let randomUsers = Math.floor(Math.random() * 200) + 19;
-    document.getElementById("activeCount").innerText = randomUsers;
-  }
-
-  updateActiveUsers();
-  setInterval(updateActiveUsers, 5000);
-</script>
-
-
+    <p>© 2025 NextGenAdi4U | All Rights Reserved</p>
+    <p>
+      <a href="https://www.youtube.com/channel/UCMU5aIURKAtlQIHoqo0nYQQ" target="_blank">📺 YouTube</a> |
+      <a href="https://www.instagram.com/_rise.everyday?igsh=bGN5N3pkbWdkZjhl&utm_source=qr" target="_blank">📸 Instagram</a> |
+      <a href="https://t.me/+SQxLnfSsx69mM2I1" target="_blank">📢 Telegram</a> |
+      <a href="mailto:nextgen.adi4u@gmail.com">📧 Contact</a>
+    </p>
   </footer>
+
+  <!-- ===== SCRIPT ===== -->
+  <script>
+    // Random active users counter (demo purpose)
+    function updateActiveUsers() {
+      let randomUsers = Math.floor(Math.random() * 200) + 19;
+      document.getElementById("activeCount").innerText = randomUsers;
+    }
+    updateActiveUsers();
+    setInterval(updateActiveUsers, 5000);
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
