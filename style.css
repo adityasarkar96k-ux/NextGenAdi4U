@@ -6,7 +6,7 @@ body {
   padding: 0;
   
   /* Background GIF */
-  background: url("background.gif") no-repeat center center fixed;
+  background: url("Paper 1.gif") no-repeat center center fixed;
   background-size: cover;
 
   color: #fff;
@@ -481,4 +481,5 @@ footer a:hover {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
 }
+
 
