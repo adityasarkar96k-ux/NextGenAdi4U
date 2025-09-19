@@ -1,4 +1,3 @@
-
 /* ===== Global ===== */
 body {
   font-family: Arial, sans-serif;
@@ -15,27 +14,17 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background: #111;
-  color: white;
+  background: #000;
   border-bottom: 2px solid red;
+  box-shadow: 0 2px 6px rgba(255, 0, 0, 0.4);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.site-title {
-  margin: 0;
-  font-size: 24px;
-  color: red;
-  letter-spacing: 1px;
-}
-
-.active-users {
-  font-size: 14px;
-  font-weight: bold;
-  background: rgba(255, 0, 0, 0.7);
-  padding: 5px 12px;
-  border-radius: 10px;
+header .logo {
+  height: 60px;  
+  width: auto;
 }
 
 header nav {
@@ -44,14 +33,24 @@ header nav {
 }
 
 header nav a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
-header nav a:hover {
-  color: red;
+header nav a:hover,
+header nav a.active {
+  color: #ff0000;
+}
+
+/* ===== Active Users Badge ===== */
+.active-users {
+  font-size: 14px;
+  font-weight: bold;
+  background: rgba(255, 0, 0, 0.7);
+  padding: 5px 12px;
+  border-radius: 10px;
 }
 
 /* ===== Search Bar ===== */
@@ -122,6 +121,7 @@ header nav a:hover {
   margin: 10px 0;
 }
 
+/* Buttons */
 .btn {
   display: inline-block;
   margin: 5px;
@@ -209,100 +209,29 @@ header nav a:hover {
   background: darkred;
 }
 
-/* ===== About Page ===== */
-.about-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 70vh;
-}
-
-.about-card {
-  background: #111;
-  color: white;
-  padding: 30px;
-  border-radius: 12px;
-  text-align: center;
-  max-width: 600px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-}
-
-.about-card img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  border: 3px solid #ff4c4c;
-}
-
-/* ===== Footer ===== */
-footer {
-  background: #111;
-  color: #ddd;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  border-top: 2px solid red;
-}
-
-footer a {
-  color: red;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 10px;
-  transition: color 0.3s;
-}
-
-footer a:hover {
-  color: white;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  header nav {
-    margin-top: 10px;
-  }
-
-  .search-bar input {
-    width: 90%;
-  }
-
-  .bundle-container {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  }
-}
-
-
-/* ===== Categories Section Premium Red-Black ===== */
+/* ===== Categories Section ===== */
 .categories {
   text-align: center;
   padding: 50px 20px;
-  background: #000; /* Pure Black Background */
+  background: #000;
 }
 
 .categories h2 {
   font-size: 32px;
   margin-bottom: 40px;
-  color: #ff3333; /* Premium Red */
+  color: #ff3333;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-/* 1 below 1 big cards */
 .category-grid {
   display: flex;
-  flex-direction: column; /* Each card ek under ek */
+  flex-direction: column;
   gap: 30px;
   max-width: 900px;
   margin: 0 auto;
 }
 
-/* Big Premium Category Card */
 .category-card {
   display: block;
   background: linear-gradient(135deg, #111, #1a1a1a);
@@ -324,7 +253,7 @@ footer a:hover {
   box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
 }
 
-/* ---------- Service Cards ---------- */
+/* ===== Services Section ===== */
 .services-container {
   display: flex;
   justify-content: center;
@@ -369,7 +298,7 @@ footer a:hover {
   color: #fff;
 }
 
-/* Tech Services List */
+/* Service List */
 .service-list {
   list-style: none;
   padding: 0;
@@ -395,180 +324,17 @@ footer a:hover {
   box-shadow: 0px 6px 20px rgba(229, 9, 20, 0.5);
 }
 
-/* Marketing & Tech Services Cards */
-.service-list {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-}
-
-.service-list li {
-  background: #111;
-  color: #fff;
-  border: 1px solid #e50914;
-  border-radius: 10px;
-  padding: 12px 18px;
-  margin-bottom: 12px;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0px 4px 15px rgba(229, 9, 20, 0.2);
-}
-
-.service-list li:hover {
-  background: #e50914;
-  color: #fff;
-  transform: translateY(-5px);
-  box-shadow: 0px 6px 20px rgba(229, 9, 20, 0.5);
-}
-
-/* Header center fix */
-header {
-  display: flex;
-  justify-content: center; /* horizontally center */
-  align-items: center;     /* vertically center */
-  padding: 20px;
-  background: #000; /* black theme */
-}
-
-header h1 {
-  margin: 0;
-  color: #ff0000; /* red theme */
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-/* Back button design */
-.back-btn {
-  background: #ff0000; /* Red background */
-  color: #fff;        /* White text */
-  border: none;
-  padding: 8px 16px;
-  margin-right: 20px;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.back-btn:hover {
-  background: #cc0000; /* Darker red on hover */
-}
-
-/* Header proper alignment - Active Users | Logo Center | Nav Right */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background: #000; /* black theme */
-  position: relative; /* logo center trick */
-}
-
-/* Logo always center */
-header h1.logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
-  color: #ff0000; /* red theme */
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-/* Left side (Active users) */
-.header-left {
-  color: #fff;
-  font-size: 0.9rem;
-}
-
-/* Right side (Nav links) */
-.header-right nav a {
-  color: #fff;
-  margin-left: 15px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-.header-right nav a:hover {
-  color: #ff0000;
-}
-
-/* Header layout fix */
-header {
-  display: flex;
-  justify-content: space-between; /* left & right normal */
-  align-items: center;
-  padding: 15px 20px;
-  background: #000; /* black theme */
-  position: relative;
-}
-
-/* Logo center absolute */
-header h1.logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
-  color: #ff0000;
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  white-space: nowrap;
-}
-
-/* Left side - Active Users */
-.header-left {
-  color: #fff;
-  font-size: 0.95rem;
-}
-
-/* Right side - Nav links */
-.header-right nav {
-  display: flex;
-  gap: 15px;
-}
-.header-right nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-.header-right nav a:hover,
-.header-right nav a.active {
-  color: #ff0000;
-}
-
-/* Header line fix */
-header {
-  border: none;              /* remove old borders */
-  border-bottom: 2px solid #ff0000; /* neat red line only bottom */
-  box-shadow: 0 2px 6px rgba(255, 0, 0, 0.4); /* soft red shadow */
-}
-
-/* Logo color white */
-header h1.logo {
-  color: #ffffff !important; /* white text */
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0;
-  letter-spacing: 2px;
-}
-
-/* ===== YouTube Uploaded Packs ===== */
+/* ===== YouTube Packs ===== */
 .yt-packs {
   text-align: center;
   padding: 60px 20px;
-  background: #000; /* Black theme */
+  background: #000;
 }
 
 .yt-packs h2 {
   font-size: 32px;
   margin-bottom: 40px;
-  color: #ff3333; /* Premium Red */
+  color: #ff3333;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -642,5 +408,70 @@ header h1.logo {
   background: darkred;
 }
 
+/* ===== About Section ===== */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
 
+.about-card {
+  background: #111;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
 
+.about-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #ff4c4c;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #111;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 2px solid red;
+}
+
+footer a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: white;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav {
+    margin-top: 10px;
+  }
+
+  .search-bar input {
+    width: 90%;
+  }
+
+  .bundle-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
