@@ -4,15 +4,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  
-  /* Background GIF */
-  background: url("No Copyright Video, Background, Red Screen, Motion Graphics, Animated Background - Yusuf Design World (1080p, h264).gif") no-repeat center center fixed;
-  background-size: cover;
-
+  background: #000;
   color: #fff;
   text-align: center;
 }
-
 
 /* ===== Header ===== */
 header {
@@ -481,6 +476,7 @@ footer a:hover {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
 }
+
 
 
 
