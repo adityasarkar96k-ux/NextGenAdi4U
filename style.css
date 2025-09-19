@@ -14,8 +14,8 @@ header {
   align-items: center;
   padding: 15px 30px;
   background: #fff;
-  border-bottom: 2px solid orange;
-  box-shadow: 0 2px 6px rgba(255, 165, 0, 0.3);
+  border-bottom: 2px solid red;
+  box-shadow: 0 2px 6px rgba(255, 0, 0, 0.2);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -40,14 +40,14 @@ header nav a {
 
 header nav a:hover,
 header nav a.active {
-  color: orange;
+  color: red;
 }
 
 /* ===== Active Users Badge ===== */
 .active-users {
   font-size: 14px;
   font-weight: bold;
-  background: rgba(255, 165, 0, 0.9);
+  background: rgba(255, 0, 0, 0.8);
   padding: 5px 12px;
   border-radius: 10px;
   color: #fff;
@@ -66,16 +66,16 @@ header nav a.active {
   font-size: 16px;
   color: #111;
   background: #fff;
-  border: 2px solid orange;
+  border: 2px solid #e50914;
   border-radius: 25px;
   outline: none;
   transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.1);
 }
 
 .search-bar input:focus {
   border-color: #111;
-  box-shadow: 0 0 12px rgba(255, 165, 0, 0.4);
+  box-shadow: 0 0 12px rgba(229, 9, 20, 0.3);
 }
 
 /* ===== Product Grid ===== */
@@ -102,7 +102,7 @@ header nav a.active {
 
 .product:hover {
   transform: scale(1.03);
-  box-shadow: 0 0 12px rgba(255, 165, 0, 0.4);
+  box-shadow: 0 0 12px rgba(229, 9, 20, 0.3);
 }
 
 .product img {
@@ -112,7 +112,7 @@ header nav a.active {
 }
 
 .product h2 {
-  color: orange;
+  color: red;
   margin: 10px 0;
 }
 
@@ -136,22 +136,22 @@ header nav a.active {
 }
 
 .add-cart {
-  background: orange;
+  background: red;
   color: white;
 }
 
 .add-cart:hover {
-  background: darkorange;
+  background: darkred;
 }
 
 .buy-now {
   background: #fff;
-  color: orange;
-  border: 2px solid orange;
+  color: red;
+  border: 2px solid red;
 }
 
 .buy-now:hover {
-  background: orange;
+  background: red;
   color: white;
 }
 
@@ -165,12 +165,12 @@ header nav a.active {
 
 .bundle-item {
   background: #fff;
-  border: 2px solid orange;
+  border: 2px solid red;
   border-radius: 10px;
   padding: 15px;
   text-align: center;
   transition: 0.3s;
-  box-shadow: 0px 4px 10px rgba(255,165,0,0.2);
+  box-shadow: 0px 4px 10px rgba(255,0,0,0.1);
 }
 
 .bundle-item img {
@@ -183,7 +183,7 @@ header nav a.active {
 
 .bundle-item h3 {
   margin: 10px 0;
-  color: orange;
+  color: #d40000;
 }
 
 .bundle-item p {
@@ -193,14 +193,14 @@ header nav a.active {
 
 .bundle-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(255,165,0,0.4);
+  box-shadow: 0 0 15px rgba(255,0,0,0.3);
 }
 
 .download-btn {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 15px;
-  background: orange;
+  background: red;
   color: white;
   border-radius: 5px;
   text-decoration: none;
@@ -209,7 +209,7 @@ header nav a.active {
 }
 
 .download-btn:hover {
-  background: darkorange;
+  background: darkred;
 }
 
 /* ===== Categories Section ===== */
@@ -222,7 +222,7 @@ header nav a.active {
 .categories h2 {
   font-size: 32px;
   margin-bottom: 40px;
-  color: orange;
+  color: #d40000;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -238,7 +238,7 @@ header nav a.active {
 .category-card {
   display: block;
   background: #fff;
-  border: 2px solid orange;
+  border: 2px solid red;
   border-radius: 15px;
   padding: 30px;
   text-decoration: none;
@@ -246,14 +246,14 @@ header nav a.active {
   font-size: 22px;
   font-weight: bold;
   transition: all 0.3s ease;
-  box-shadow: 0 0 15px rgba(255, 165, 0, 0.2);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.1);
 }
 
 .category-card:hover {
-  background: orange;
+  background: red;
   color: #fff;
   transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 0 25px rgba(255, 165, 0, 0.5);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
 }
 
 /* ===== Services Section ===== */
@@ -268,7 +268,7 @@ header nav a.active {
 
 .service-card {
   background: #fff;
-  border: 2px solid orange;
+  border: 2px solid red;
   color: #111;
   padding: 30px;
   border-radius: 15px;
@@ -276,11 +276,11 @@ header nav a.active {
   text-decoration: none;
   flex: 1 1 300px;
   transition: all 0.3s ease;
-  box-shadow: 0px 5px 20px rgba(255,165,0,0.2);
+  box-shadow: 0px 5px 20px rgba(229, 9, 20, 0.1);
 }
 
 .service-card h3 {
-  color: orange;
+  color: red;
   margin-bottom: 15px;
   font-size: 1.5rem;
 }
@@ -291,10 +291,10 @@ header nav a.active {
 }
 
 .service-card:hover {
-  background: orange;
+  background: red;
   color: #fff;
   transform: translateY(-10px);
-  box-shadow: 0px 8px 30px rgba(255,165,0,0.5);
+  box-shadow: 0px 8px 30px rgba(229, 9, 20, 0.4);
 }
 
 .service-card:hover h3 {
@@ -311,20 +311,20 @@ header nav a.active {
 .service-list li {
   background: #fff;
   color: #111;
-  border: 1px solid orange;
+  border: 1px solid red;
   border-radius: 10px;
   padding: 12px 18px;
   margin-bottom: 12px;
   font-size: 1rem;
   transition: all 0.3s ease;
-  box-shadow: 0px 4px 15px rgba(255,165,0,0.2);
+  box-shadow: 0px 4px 15px rgba(229, 9, 20, 0.1);
 }
 
 .service-list li:hover {
-  background: orange;
+  background: red;
   color: #fff;
-  transform: translateY(-5px;
-  box-shadow: 0px 6px 20px rgba(255,165,0,0.5);
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px rgba(229, 9, 20, 0.4);
 }
 
 /* ===== YouTube Packs ===== */
@@ -337,7 +337,7 @@ header nav a.active {
 .yt-packs h2 {
   font-size: 32px;
   margin-bottom: 40px;
-  color: orange;
+  color: red;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -352,12 +352,12 @@ header nav a.active {
 
 .yt-pack-card {
   background: #fff;
-  border: 2px solid orange;
+  border: 2px solid red;
   border-radius: 15px;
   padding: 25px;
   text-align: center;
   transition: all 0.3s ease;
-  box-shadow: 0 0 15px rgba(255, 165, 0, 0.2);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.1);
 }
 
 .yt-pack-card img {
@@ -369,7 +369,7 @@ header nav a.active {
 }
 
 .yt-pack-card h3 {
-  color: orange;
+  color: red;
   margin: 10px 0;
   font-size: 20px;
 }
@@ -381,10 +381,10 @@ header nav a.active {
 }
 
 .yt-pack-card:hover {
-  background: orange;
+  background: red;
   color: #fff;
   transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 0 25px rgba(255, 165, 0, 0.5);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
 }
 
 .yt-pack-card:hover h3,
@@ -396,7 +396,7 @@ header nav a.active {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 15px;
-  background: orange;
+  background: red;
   color: white;
   border-radius: 5px;
   text-decoration: none;
@@ -405,7 +405,7 @@ header nav a.active {
 }
 
 .yt-pack-card .download-btn:hover {
-  background: darkorange;
+  background: darkred;
 }
 
 /* ===== About Section ===== */
@@ -431,7 +431,7 @@ header nav a.active {
   height: 150px;
   border-radius: 50%;
   margin-bottom: 15px;
-  border: 3px solid orange;
+  border: 3px solid red;
 }
 
 /* ===== Footer ===== */
@@ -441,11 +441,11 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  border-top: 2px solid orange;
+  border-top: 2px solid red;
 }
 
 footer a {
-  color: orange;
+  color: red;
   text-decoration: none;
   font-weight: bold;
   margin: 0 10px;
