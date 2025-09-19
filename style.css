@@ -1,12 +1,18 @@
 /* ===== Global ===== */
+/* ===== Global ===== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #000;
+  
+  /* Background GIF */
+  background: url("background.gif") no-repeat center center fixed;
+  background-size: cover;
+
   color: #fff;
   text-align: center;
 }
+
 
 /* ===== Header ===== */
 header {
@@ -475,3 +481,4 @@ footer a:hover {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
 }
+
