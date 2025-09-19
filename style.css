@@ -1,12 +1,11 @@
 /* ===== Global ===== */
-/* ===== Global ===== */
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: url("b9999.gif") no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
+  background: #fff; /* White Background */
+  color: #111;      /* Dark Text */
+}
 
 /* ===== Header ===== */
 header {
@@ -14,16 +13,16 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background: #000;
+  background: #fff;
   border-bottom: 2px solid red;
-  box-shadow: 0 2px 6px rgba(255, 0, 0, 0.4);
+  box-shadow: 0 2px 6px rgba(255, 0, 0, 0.2);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 header .logo {
-  height: 60px;  
+  height: 60px;
   width: auto;
 }
 
@@ -33,7 +32,7 @@ header nav {
 }
 
 header nav a {
-  color: #fff;
+  color: #111;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
@@ -41,16 +40,17 @@ header nav a {
 
 header nav a:hover,
 header nav a.active {
-  color: #ff0000;
+  color: red;
 }
 
 /* ===== Active Users Badge ===== */
 .active-users {
   font-size: 14px;
   font-weight: bold;
-  background: rgba(255, 0, 0, 0.7);
+  background: rgba(255, 0, 0, 0.8);
   padding: 5px 12px;
   border-radius: 10px;
+  color: #fff;
 }
 
 /* ===== Search Bar ===== */
@@ -64,18 +64,18 @@ header nav a.active {
   max-width: 450px;
   padding: 12px 15px;
   font-size: 16px;
-  color: #fff;
-  background: #111;
+  color: #111;
+  background: #fff;
   border: 2px solid #e50914;
   border-radius: 25px;
   outline: none;
   transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(229, 9, 20, 0.3);
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.1);
 }
 
 .search-bar input:focus {
-  border-color: #fff;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+  border-color: #111;
+  box-shadow: 0 0 12px rgba(229, 9, 20, 0.3);
 }
 
 /* ===== Product Grid ===== */
@@ -92,16 +92,17 @@ header nav a.active {
 }
 
 .product {
-  background: #111;
-  border: 1px solid red;
+  background: #fff;
+  border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
-  transition: transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .product:hover {
   transform: scale(1.03);
+  box-shadow: 0 0 12px rgba(229, 9, 20, 0.3);
 }
 
 .product img {
@@ -119,6 +120,7 @@ header nav a.active {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0;
+  color: #111;
 }
 
 /* Buttons */
@@ -143,13 +145,14 @@ header nav a.active {
 }
 
 .buy-now {
-  background: white;
+  background: #fff;
   color: red;
+  border: 2px solid red;
 }
 
 .buy-now:hover {
-  background: #ff3333;
-  color: black;
+  background: red;
+  color: white;
 }
 
 /* ===== Bundle Section ===== */
@@ -161,13 +164,13 @@ header nav a.active {
 }
 
 .bundle-item {
-  background: #111;
+  background: #fff;
   border: 2px solid red;
   border-radius: 10px;
   padding: 15px;
   text-align: center;
   transition: 0.3s;
-  box-shadow: 0px 4px 10px rgba(255,0,0,0.3);
+  box-shadow: 0px 4px 10px rgba(255,0,0,0.1);
 }
 
 .bundle-item img {
@@ -180,17 +183,17 @@ header nav a.active {
 
 .bundle-item h3 {
   margin: 10px 0;
-  color: #ff3333;
+  color: #d40000;
 }
 
 .bundle-item p {
   font-size: 14px;
-  color: #ddd;
+  color: #444;
 }
 
 .bundle-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px red;
+  box-shadow: 0 0 15px rgba(255,0,0,0.3);
 }
 
 .download-btn {
@@ -213,13 +216,13 @@ header nav a.active {
 .categories {
   text-align: center;
   padding: 50px 20px;
-  background: #000;
+  background: #fafafa;
 }
 
 .categories h2 {
   font-size: 32px;
   margin-bottom: 40px;
-  color: #ff3333;
+  color: #d40000;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -234,23 +237,23 @@ header nav a.active {
 
 .category-card {
   display: block;
-  background: linear-gradient(135deg, #111, #1a1a1a);
-  border: 2px solid #ff1a1a;
+  background: #fff;
+  border: 2px solid red;
   border-radius: 15px;
   padding: 30px;
   text-decoration: none;
-  color: white;
+  color: #111;
   font-size: 22px;
   font-weight: bold;
   transition: all 0.3s ease;
-  box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.1);
 }
 
 .category-card:hover {
-  background: #ff1a1a;
-  color: #000;
+  background: red;
+  color: #fff;
   transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
 }
 
 /* ===== Services Section ===== */
@@ -264,34 +267,34 @@ header nav a.active {
 }
 
 .service-card {
-  background: #111;
-  border: 2px solid #e50914;
-  color: #fff;
+  background: #fff;
+  border: 2px solid red;
+  color: #111;
   padding: 30px;
   border-radius: 15px;
   text-align: center;
   text-decoration: none;
   flex: 1 1 300px;
   transition: all 0.3s ease;
-  box-shadow: 0px 5px 20px rgba(229, 9, 20, 0.3);
+  box-shadow: 0px 5px 20px rgba(229, 9, 20, 0.1);
 }
 
 .service-card h3 {
-  color: #e50914;
+  color: red;
   margin-bottom: 15px;
   font-size: 1.5rem;
 }
 
 .service-card p {
   font-size: 1rem;
-  color: #ddd;
+  color: #444;
 }
 
 .service-card:hover {
-  background: #e50914;
+  background: red;
   color: #fff;
   transform: translateY(-10px);
-  box-shadow: 0px 8px 30px rgba(229, 9, 20, 0.6);
+  box-shadow: 0px 8px 30px rgba(229, 9, 20, 0.4);
 }
 
 .service-card:hover h3 {
@@ -306,35 +309,35 @@ header nav a.active {
 }
 
 .service-list li {
-  background: #111;
-  color: #fff;
-  border: 1px solid #e50914;
+  background: #fff;
+  color: #111;
+  border: 1px solid red;
   border-radius: 10px;
   padding: 12px 18px;
   margin-bottom: 12px;
   font-size: 1rem;
   transition: all 0.3s ease;
-  box-shadow: 0px 4px 15px rgba(229, 9, 20, 0.2);
+  box-shadow: 0px 4px 15px rgba(229, 9, 20, 0.1);
 }
 
 .service-list li:hover {
-  background: #e50914;
+  background: red;
   color: #fff;
   transform: translateY(-5px);
-  box-shadow: 0px 6px 20px rgba(229, 9, 20, 0.5);
+  box-shadow: 0px 6px 20px rgba(229, 9, 20, 0.4);
 }
 
 /* ===== YouTube Packs ===== */
 .yt-packs {
   text-align: center;
   padding: 60px 20px;
-  background: #000;
+  background: #f9f9f9;
 }
 
 .yt-packs h2 {
   font-size: 32px;
   margin-bottom: 40px;
-  color: #ff3333;
+  color: red;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -348,13 +351,13 @@ header nav a.active {
 }
 
 .yt-pack-card {
-  background: #111;
-  border: 2px solid #ff1a1a;
+  background: #fff;
+  border: 2px solid red;
   border-radius: 15px;
   padding: 25px;
   text-align: center;
   transition: all 0.3s ease;
-  box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.1);
 }
 
 .yt-pack-card img {
@@ -366,30 +369,27 @@ header nav a.active {
 }
 
 .yt-pack-card h3 {
-  color: #ff3333;
+  color: red;
   margin: 10px 0;
   font-size: 20px;
 }
 
 .yt-pack-card p {
-  color: #ddd;
+  color: #444;
   font-size: 14px;
   margin-bottom: 15px;
 }
 
 .yt-pack-card:hover {
-  background: #ff1a1a;
-  color: #000;
+  background: red;
+  color: #fff;
   transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
 }
 
-.yt-pack-card:hover h3 {
-  color: #000;
-}
-
+.yt-pack-card:hover h3,
 .yt-pack-card:hover p {
-  color: #111;
+  color: #fff;
 }
 
 .yt-pack-card .download-btn {
@@ -417,13 +417,13 @@ header nav a.active {
 }
 
 .about-card {
-  background: #111;
-  color: white;
+  background: #fff;
+  color: #111;
   padding: 30px;
   border-radius: 12px;
   text-align: center;
   max-width: 600px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .about-card img {
@@ -431,13 +431,13 @@ header nav a.active {
   height: 150px;
   border-radius: 50%;
   margin-bottom: 15px;
-  border: 3px solid #ff4c4c;
+  border: 3px solid red;
 }
 
 /* ===== Footer ===== */
 footer {
-  background: #111;
-  color: #ddd;
+  background: #f2f2f2;
+  color: #444;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
@@ -453,7 +453,7 @@ footer a {
 }
 
 footer a:hover {
-  color: white;
+  color: #111;
 }
 
 /* ===== Responsive ===== */
@@ -475,8 +475,3 @@ footer a:hover {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
 }
-
-
-
-
-
