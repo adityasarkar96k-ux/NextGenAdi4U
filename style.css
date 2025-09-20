@@ -327,6 +327,7 @@ header nav a.active {
   box-shadow: 0px 6px 20px rgba(229, 9, 20, 0.4);
 }
 
+/* ===== YouTube Packs ===== */
 .yt-packs {
   text-align: center;
   padding: 60px 20px;
@@ -336,7 +337,7 @@ header nav a.active {
 .yt-packs h2 {
   font-size: 32px;
   margin-bottom: 40px;
-  color: orange;
+  color: red;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -351,12 +352,12 @@ header nav a.active {
 
 .yt-pack-card {
   background: #fff;
-  border: 2px solid orange;
+  border: 2px solid red;
   border-radius: 15px;
   padding: 25px;
   text-align: center;
   transition: all 0.3s ease;
-  box-shadow: 0 0 15px rgba(255, 165, 0, 0.2);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.1);
 }
 
 .yt-pack-card img {
@@ -368,7 +369,7 @@ header nav a.active {
 }
 
 .yt-pack-card h3 {
-  color: orange;
+  color: red;
   margin: 10px 0;
   font-size: 20px;
 }
@@ -380,10 +381,10 @@ header nav a.active {
 }
 
 .yt-pack-card:hover {
-  background: orange;
+  background: red;
   color: #fff;
   transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 0 25px rgba(255, 165, 0, 0.5);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
 }
 
 .yt-pack-card:hover h3,
@@ -395,7 +396,7 @@ header nav a.active {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 15px;
-  background: orange;
+  background: red;
   color: white;
   border-radius: 5px;
   text-decoration: none;
@@ -404,8 +405,9 @@ header nav a.active {
 }
 
 .yt-pack-card .download-btn:hover {
-  background: darkorange;
+  background: darkred;
 }
+
 /* ===== About Section ===== */
 .about-container {
   display: flex;
@@ -483,5 +485,3 @@ a:hover {
   color: white;
   text-decoration: underline;
 }
-
-
